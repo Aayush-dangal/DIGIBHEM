@@ -1,0 +1,186 @@
+HTML Code :
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="bookingForm">
+        <h2>Customer Info</h2>
+        <div class="form-group">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" required>
+        </div>
+        <div class="form-group">
+            <label for="checkInDate">Check-in Date:</label>
+            <input type="date" id="checkInDate" required>
+        </div>
+        <div class="form-group">
+            <label for="totalDays">Total No of Days:</label>
+            <input type="number" id="totalDays" required>
+        </div>
+        <div class="form-group">
+            <label for="totalPersons">Total No of Persons:</label>
+            <input type="number" id="totalPersons" required>
+        </div>
+
+        <h2>Room Information</h2>
+        <div class="form-group">
+            <label for="roomType">Room Type:</label>
+            <select id="roomType">
+                <option value="Delux">Delux Room</option>
+                <option value="Suite">Suite Room</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amenities">Amenities:</label>
+            <select id="amenities">
+                <option value="AC">AC</option>
+                <option value="Locker">Locker</option>
+            </select>
+        </div>
+
+        <h2>Room Rates</h2>
+        <p>Delux Room: 2500/-</p>
+        <p>Suite Room: 4000/-</p>
+        <p>AC: 1000/-</p>
+        <p>Locker: 300/-</p>
+
+        <h2>Advance Payment</h2>
+        <div class="form-group">
+            <label for="advanceAmount">Advance Amount:</label>
+            <input type="number" id="advanceAmount" required>
+        </div>
+
+        <h2>Balance Amount</h2>
+        <div class="form-group">
+            <label for="balance">Balance:</label>
+            <input type="text" id="balance" readonly>
+        </div>
+
+        <h2>Total Cost Calculation</h2>
+        <div class="form-group">
+            <label for="totalRoomCost">Total Room Cost:</label>
+            <input type="text" id="totalRoomCost" readonly>
+        </div>
+        <div class="form-group">
+            <label for="totalAmenitiesCost">Total Amenities Cost:</label>
+            <input type="text" id="totalAmenitiesCost" readonly>
+        </div>
+
+        <h2>Total Cost</h2>
+        <div class="form-group">
+            <label for="totalCost">Total Cost:</label>
+            <input type="text" id="totalCost" readonly>
+        </div>
+
+        <h2>Additional Charges</h2>
+        <p>Upto 2 People: No Change in Cost</p>
+        <p>Per Day Cost for Extra Person: 1000/-</p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="bookingForm">
+        <h2>Customer Info</h2>
+        <div class="form-group">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" required>
+        </div>
+        <div class="form-group">
+            <label for="checkInDate">Check-in Date:</label>
+            <input type="date" id="checkInDate" required>
+        </div>
+        <div class="form-group">
+            <label for="totalDays">Total No of Days:</label>
+            <input type="number" id="totalDays" required>
+        </div>
+        <div class="form-group">
+            <label for="totalPersons">Total No of Persons:</label>
+            <input type="number" id="totalPersons" required>
+        </div>
+
+        <h2>Room Information</h2>
+        <div class="form-group">
+            <label for="roomType">Room Type:</label>
+            <select id="roomType">
+                <option value="Delux">Delux Room</option>
+                <option value="Suite">Suite Room</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amenities">Amenities:</label>
+            <select id="amenities">
+                <option value="AC">AC</option>
+                <option value="Locker">Locker</option>
+            </select>
+        </div>
+
+        <h2>Room Rates</h2>
+        <p>Delux Room: 2500/-</p>
+        <p>Suite Room: 4000/-</p>
+        <p>AC: 1000/-</p>
+        <p>Locker: 300/-</p>
+
+        <h2>Advance Payment</h2>
+        <div class="form-group">
+            <label for="advanceAmount">Advance Amount:</label>
+            <input type="number" id="advanceAmount" required>
+        </div>
+
+        <h2>Balance Amount</h2>
+        <div class="form-group">
+            <label for="balance">Balance:</label>
+            <input type="text" id="balance" readonly>
+        </div>
+
+        <h2>Total Cost Calculation</h2>
+        <div class="form-group">
+            <label for="totalRoomCost">Total Room Cost:</label>
+            <input type="text" id="totalRoomCost" readonly>
+        </div>
+        <div class="form-group">
+            <label for="totalAmenitiesCost">Total Amenities Cost:</label>
+            <input type="text" id="totalAmenitiesCost" readonly>
+        </div>
+
+        <h2>Total Cost</h2>
+        <div class="form-group">
+            <label for="totalCost">Total Cost:</label>
+            <input type="text" id="totalCost" readonly>
+        </div>
+
+        <h2>Additional Charges</h2>
+        <p>Upto 2 People: No Change in Cost</p>
+        <p>Per Day Cost for Extra Person: 1000/-</p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
